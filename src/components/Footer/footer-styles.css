@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    color: #ffffff;
+    margin-top: 80px;
+    padding: 0 32px;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 640px;
+    border-right: 1px solid grey;
+}
+
+.footer-left img {
+    width: 120px;
+    cursor: pointer;
+}
+
+.footer-left p {
+    width: 640px
+}
+
+.footer-right {
+    width: 1280px;
+    padding-left: 20px;
+}
