@@ -13,7 +13,6 @@ footer {
     justify-content: center;
     flex-direction: column;
     height: 200px;
-    width: 640px;
     border-right: 1px solid grey;
 }
 
@@ -27,6 +26,9 @@ footer {
 }
 
 .footer-right {
-    width: 1280px;
     padding-left: 20px;
+}
+
+.footer-right p {
+    width: 1280px
 }
