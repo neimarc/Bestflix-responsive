@@ -1,7 +1,8 @@
-import './home-styles.css';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import { useEffect, useState } from 'react';
+import Card from '../../components/Card';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import './home-styles.css';
 
 
 function Home() {
@@ -25,6 +26,15 @@ function Home() {
   return (
     <div className='home-box'>
       <Header />
+      <div>
+        {movies.map((movie) => (
+          <Card
+            key={movie.id}
+            cover={movie.poster_path}
+            title={movie.title} />
+
+        ))}
+      </div>
       <Footer />
     </div>
   );
