@@ -26,7 +26,7 @@ function Home() {
   return (
     <div className='home-box'>
       <Header />
-      <div>
+      <section className='section-movies'>
         {movies.map((movie) => (
           <Card
             key={movie.id}
@@ -34,7 +34,7 @@ function Home() {
             title={movie.title} />
 
         ))}
-      </div>
+      </section>
       <Footer />
     </div>
   );
