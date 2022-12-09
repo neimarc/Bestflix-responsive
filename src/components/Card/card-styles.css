@@ -16,6 +16,15 @@
     height: 50px;
     justify-content: center;
     align-items: center;
+    background-color: #000000;
     color: #ffffff;
+    white-space: nowrap;
+    text-align: center;
+}
 
+.title-box h1 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0 10px;
+    font-size: 20px;
 }
