@@ -12,3 +12,25 @@
 .menu li:hover {
     color: #fed530;
 }
+
+.close-style, .menu-style {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+
+@media (max-width: 540px) {
+    .close-style, .menu-style {
+        display: block;
+        width: 35px;
+        right: 2rem;
+    }
+}
+
+.menu-style {
+    top: 3.5rem;
+}
+
+.close-style {
+    top: 3rem;
+}
