@@ -20,17 +20,51 @@
 }
 
 @media (max-width: 540px) {
+
     .close-style, .menu-style {
         display: block;
         width: 35px;
         right: 2rem;
     }
-}
 
-.menu-style {
-    top: 3.5rem;
-}
+    .close-style {
+        top: 3rem;
+    }
 
-.close-style {
-    top: 3rem;
+    .menu-style {
+        top: 3.5rem;
+    }
+
+    .full-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fed530;
+        z-index: 2;
+    }
+
+    .full-menu ul {
+        display: block
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        color: #000000;
+        padding: 0;
+    }
+
+    .menu li {
+        margin: 1.5rem 0;
+        font-size: 2.5rem
+    }    
+
+    .menu li:hover {
+        color: #000000
+    }
 }
