@@ -24,7 +24,9 @@ header {
 
 @media (max-width: 540px) {
     .logo {
-        margin: 3rem 0;
-        
+        margin: 3rem 0; 
+    }
+    header {
+        margin: 0;
     }
 }
