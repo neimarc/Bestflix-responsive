@@ -1,10 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CloseIcon from '../../assets/close.svg';
 import MenuIcon from '../../assets/menu.svg';
 import './menu-styles.css';
 
 function Menu() {
     const [openMenu, setOpenMenu] = useState(false);
+
+    useEffect(() => {
+        document.querySelector('body').style.overflow =
+            openMenu ? 'hidden' : 'inicial';
+    }, [openMenu])
 
     return (
         <div className={`${openMenu && 'full-menu'}`}>
